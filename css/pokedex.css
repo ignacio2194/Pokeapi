@@ -48,6 +48,7 @@ html {
       border-radius: 50%;
       width: 120px;
       height: 120px;
+      
 
   }
   .pokemon .img-container img{
@@ -56,14 +57,15 @@ html {
     
 }
 .pokemon ,.info{
-    margin-top: 20px;
+margin: 4rem;
+text-align: center;
 }
 .pokemon .number{
     background-color: #fff;
 }
-.pokemon .info{
+/* .pokemon ,.info{
     margin-top: 20px;
-}
+} */
 .pokemon .number{
     background-color: #fff;
     border-radius: 10px;
@@ -71,6 +73,6 @@ html {
     padding: 5px 10px;
 }
 .pokemon .name{
-    margin: 15px 0 7px ;
+    margin: 3px 0 7px ;
     letter-spacing: 1px;
 }

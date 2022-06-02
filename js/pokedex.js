@@ -24,10 +24,11 @@ const fetchPokemons = async()=>{
     }
 }
 const getPokemon = async id =>{
-    const url =
-    `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const url =`https://pokeapi.co/api/v2/pokemon/${id}`;
+ 
     const res  =await fetch(url);
     const pokemon=  await res.json()
+    console.log()
     createPokemonCard(pokemon)
 }
 fetchPokemons()
@@ -40,9 +41,9 @@ const name = pokemon.name[0].toUpperCase()+ pokemon.name.slice(1);
 const color = colors[type];
 pokemonEl.style.backgroundColor = color;
 
-
 const pokeInnerHTML =`
-<div class="img-container"> <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/> 
+<div class="img-container"> 
+<img src=${pokemon.sprites.front_default}
  </div> 
 <div class="info">
 <span class ="number">#${pokemon.id.toString().padStart(3,'0')}</span>
